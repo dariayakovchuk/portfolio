@@ -14,10 +14,10 @@ function lerp(start, end, factor) {
 }
 
 function updateActiveSliderNumber(markerMove, markerMaxMove) {
-	const partWidth = markerMaxMove / 10;
-	let currentPart = Math.round((markerMove - 70) / partWidth) + 1;
-	currentPart = Math.min(10, currentPart);
-	activeSlide.textContent = `${currentPart}/10`;
+	const partWidth = markerMaxMove / 20;
+	let currentPart = Math.round((markerMove - 140) / partWidth) + 1;
+	currentPart = Math.min(20, currentPart);
+	activeSlide.textContent = `${currentPart}/20`;
 }
 
 function update() {
@@ -26,7 +26,7 @@ function update() {
 	gsap.set(".slider-wrapper", { x: -current,});
 	let moveRatio = current / maxScroll;
 	let markerMaxMove = window.innerWidth - markerWrapper.offsetWidth - 170;
-	let markerMove = 70 + markerMaxMove * moveRatio;
+	let markerMove = 140 + markerMaxMove * moveRatio;
 	gsap.set(".marker-wrapper", { x: markerMove,});
 
 	updateActiveSliderNumber(markerMove, markerMaxMove);
