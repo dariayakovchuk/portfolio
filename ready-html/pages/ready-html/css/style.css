@@ -61,9 +61,7 @@ footer {
     gap: 50px;
 }
 .slide {
-    /* width: 500px; */
     height: 500px;
-    /* background: #302e2e; */
 }
 .slide__center {
     width: 500px;
