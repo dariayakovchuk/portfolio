@@ -32,6 +32,16 @@ nav > div {
     display: flex;
     gap: 50px;
 }
+.button-link {
+    text-decoration: none;
+  }
+.button {
+    background-color: #fafafa;
+    color: #302e2e;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
 footer {
     bottom: 0;
 }
