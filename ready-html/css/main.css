@@ -1,22 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nixie+One&display=swap');
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-:root {
-	--index: calc(1vw + 1vh);
-	--color-header: #f4efec;
-	--color-text: #cdc6c3;
-	--gallery-gap: calc(var(--index) * 7.5)
-}
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Nixie One';
-}
-/* will-change */
-.content, .hero, .main-header, .gallery > * {
-	will-change: transform;
 }
 body {
 	background-color: #302e2e;
@@ -25,71 +14,63 @@ body {
 	font-family: 'Nixie One';
 	overflow-x: hidden;
 }
-.hero {
-	width: calc(var(--index) * 36);
-	position: absolute;
-	left: 37vw;
-	top: 22vh;
-	z-index: -1;
-}
 .main-header {
 	height: 100vh;
+	margin-bottom: 100px;
 }
 .container {
 	padding: 0 7vw;
 }
 .main-title {
-	font-size: calc(var(--index) * 6);
+	font-size: 110px;
 	position: absolute;
 	width: min-content;
 	bottom: 12vh;
 	line-height: .9;
 }
 .name {
-	font-size: calc(var(--index) * 2);
+	font-size: 70px;
 	position: absolute;
 	width: max-content;
 	bottom: 2vh;
 	line-height: .9;
 }
 .gallery {
-	display: flex;
-	padding: calc(var(--index) * 8) 0;
-}
-.gallery > * {
 	flex: 1;
 	display: flex;
+	padding: 40px 0;
 	align-items: center;
 	flex-direction: column;
 	overflow: hidden;
 }
 .gallery__item {
-	max-width: calc(var(--index) * 21);
-	margin-bottom: var(--gallery-gap);
+	max-width: 400px;
+	margin-bottom: 40px;
 	max-height: 180vh;
 	border-radius: 8px;
 	overflow: hidden;
 	transition: transform 0.3s ease-in-out;
 }
-/* .gallery__item:hover{
-	transform: scale(1.1) !important;
-} */
-.gallery__left {
-	margin-top: calc(var(--gallery-gap) * 1.75);
-}
-.gallery__right .gallery__item {
-	margin: 0;
-	margin-top: var(--gallery-gap);
+.gallery__item:hover{
+	transform: scale(1.2) !important;
 }
 .text-block {
-	color: var(--color-text);
+	color: white;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 	position: relative;
+	max-width: 600px;
+	margin-bottom: 40px;
+	max-height: 180vh;
+	border-radius: 8px;
 }
 .text-block__h {
-	font-size: 2rem;
-	line-height: 2.4rem;
-	color: var(--color-header);
-	margin-bottom: 1.5rem;
+	font-size: 50px;
+	line-height: 40px;
+	color: white;
+	margin-bottom: 30px;
 }
 .text-block__p {
 	line-height: 1.75;
